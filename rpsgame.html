@@ -54,7 +54,7 @@ Tap the button for a new game or leave the page to quit.`)
           ) {
             return `${playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1)} does not beat ${computerSelection};
 Computer wins round ${++gameRound} and gains 1 point
-The score is ${playerScore} : ${computerScore++}`;
+The score is ${playerScore} : ${++computerScore}`;
           } else if (
             (playerSelection === "rock" && computerSelection === "scissors") ||
             (playerSelection === "paper" && computerSelection === "rock") ||
@@ -62,7 +62,7 @@ The score is ${playerScore} : ${computerScore++}`;
           ) {
             return `${playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection};
 You win round ${++gameRound} and gain 1 point
-The score is ${playerScore++} : ${computerScore}`;
+The score is ${++playerScore} : ${computerScore}`;
           } else if (playerSelection === computerSelection) {
             return `You both chose ${playerSelection}; it's a tie!
 With ${++gameRound} round(s) played the score remains ${playerScore} : ${computerScore}`;
