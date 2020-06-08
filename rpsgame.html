@@ -52,23 +52,20 @@ Click OK for a new game or leave the page to exit.`)
             (playerSelection === "rock" && computerSelection === "paper") ||
             (playerSelection === "paper" && computerSelection === "scissors")
           ) {
-            ++gameRound;
             return `${playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1)} does not beat ${computerSelection};
-Computer wins round ${gameRound} and gains 1 point
+Computer wins round ${++gameRound} and gains 1 point
 The score is ${playerScore} : ${computerScore++}+1`;
           } else if (
             (playerSelection === "rock" && computerSelection === "scissors") ||
             (playerSelection === "paper" && computerSelection === "rock") ||
             (playerSelection === "scissors" && computerSelection === "paper")
           ) {
-            ++gameRound;
             return `${playerSelection.slice(0, 1).toUpperCase() + playerSelection.slice(1)} beats ${computerSelection};
-You win round ${gameRound} and gain 1 point
+You win round ${++gameRound} and gain 1 point
 The score is ${playerScore++}+1 : ${computerScore}`;
           } else if (playerSelection === computerSelection) {
-            ++gameRound;
             return `You both chose ${playerSelection}; it's a tie!
-With ${gameRound} rounds played the score remains ${playerScore} : ${computerScore}`;
+With ${++gameRound} rounds played the score remains ${playerScore} : ${computerScore}`;
           } else {
             return `Invalid entry. The score remains ${playerScore} : ${computerScore}`;
           }
