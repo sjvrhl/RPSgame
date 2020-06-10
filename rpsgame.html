@@ -40,11 +40,15 @@ Tap the button for a new game or leave the page to quit.`)
 Tap the button for a new game or leave the page to quit.`)
         }
 
+
+
         function computerPlay() {
           const computerSelection = ["rock", "paper", "scissors"];
           const random = Math.floor(Math.random() * 3);
           return computerSelection[random];
         }
+
+
 
         function playRound(playerSelection, computerSelection) {
           if (
@@ -72,8 +76,13 @@ With ${++gameRound} round(s) played the score remains ${playerScore} : ${compute
         }
       }
 
+
+
       game();
       location.reload();
+
+
+      
     </script>
   </body>
 </html>
