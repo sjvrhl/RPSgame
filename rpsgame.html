@@ -7,6 +7,9 @@
   </head>
   <body>
     <script>
+
+// This function determines how the game flows based on scores of each party
+
       function game() {
         let playerScore = 0;
         let computerScore = 0;
@@ -40,7 +43,7 @@ Tap the button for a new game or leave the page to quit.`)
 Tap the button for a new game or leave the page to quit.`)
         }
 
-
+// This function causes the computer to return a selection randomly
 
         function computerPlay() {
           const computerSelection = ["rock", "paper", "scissors"];
@@ -48,7 +51,7 @@ Tap the button for a new game or leave the page to quit.`)
           return computerSelection[random];
         }
 
-
+//this function determines who wins a round based on selection of each party
 
         function playRound(playerSelection, computerSelection) {
           if (
@@ -76,13 +79,13 @@ With ${++gameRound} round(s) played the score remains ${playerScore} : ${compute
         }
       }
 
-
+// this function initiates the game when the page is loaded and initiates replay
 
       game();
       location.reload();
 
 
-      
+
     </script>
   </body>
 </html>
