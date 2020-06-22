@@ -18,13 +18,13 @@ html {
 
 .gamestats, .inputs {
   text-align: center;
-  padding: 10px 10px;
+  padding: 20px 10px;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  height: 125px;
+  height: 100px;
 }
 
 .text {
@@ -51,6 +51,10 @@ html {
   .gamestats {
     display: flex;
     justify-content: space-between;
+  }
+
+  .inputs {
+    padding-top: 0px;
   }
 
   .wrapper {
