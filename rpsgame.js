@@ -27,7 +27,7 @@ function game() {
     });
     document.querySelector(
       ".text"
-    ).textContent = `Ready to play another 5 rounds! What will you choose?`;
+    ).textContent = `Ready to play another 5 rounds. What will you choose?`;
   } else if (
     (playerSelection === "scissors" && computerSelection === "rock") ||
     (playerSelection === "rock" && computerSelection === "paper") ||
