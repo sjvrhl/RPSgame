@@ -10,7 +10,7 @@ html {
   font-size: 1em;
   color: ivory;
   width: 90vw;
-  height: 200px;
+  height: 280px;
   margin: 0 auto;
   background-color: hsla(0, 0%, 20%, 0.6);
   max-width: 800px;
@@ -18,17 +18,17 @@ html {
 
 .gamestats, .inputs {
   text-align: center;
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .wrapper {
   display: flex;
   align-items: center;
-  height: 100px;
+  height: 120px;
 }
 
 .text {
-  padding: 0px 10px;
+  padding: 0px 20px;
 }
 
 .inputs {
@@ -46,6 +46,7 @@ html {
 
   .container {
   font-size: 1.2em;
+  height: 285px;
   }
 
   .gamestats {
@@ -58,7 +59,7 @@ html {
   }
 
   .wrapper {
-    height: 160px;
+    height: 180px;
   }
 
 }
