@@ -1,6 +1,7 @@
 html {
   background: url(rps.jpg);
   background-position: center top -200px;
+  background-size: 150vw;
   padding: 10px 10px;
 }
 
@@ -36,6 +37,12 @@ html {
 }
 
 @media only screen and (min-width: 1280px) {
+
+html {
+  background: url(rps.jpg);
+  background-position: center top -200px;
+  padding: 10px 10px;
+}
 
   .container {
   font-size: 1.2em;
