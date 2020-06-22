@@ -1,0 +1,53 @@
+html {
+  background: url(rps.jpg);
+  background-position: center top -200px;
+  padding: 10px 10px;
+}
+
+.container {
+  font-family: 'Overpass Mono', monospace;
+  font-size: 1em;
+  color: ivory;
+  width: 90vw;
+  height: 200px;
+  margin: 0 auto;
+  background-color: hsla(0, 0%, 20%, 0.6);
+  max-width: 800px;
+}
+
+.gamestats, .inputs {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height: 125px;
+}
+
+.text {
+  padding: 0px 10px;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 1280px) {
+
+  .container {
+  font-size: 1.2em;
+  }
+
+  .gamestats {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    height: 160px;
+  }
+
+}
