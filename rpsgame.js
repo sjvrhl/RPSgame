@@ -5,6 +5,8 @@ let roundWinner;
 let gamesWon = 0;
 let gameSum = 0;
 
+// A comemnt
+
 function computerPlay() {
   const computerSelection = ["rock", "paper", "scissors"];
   const random = Math.floor(Math.random() * 3);
